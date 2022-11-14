@@ -15,7 +15,10 @@ export function subtract(n1: number, n2: number): number {
 
 export function divide(n1: number, n2: number): number {
     typeError(n1, n2);
-    return (r1 / r2);
+    if (n2 == 0) {
+        return undefined
+    }
+    return (n1 / n2);
 }
 
 export default {
