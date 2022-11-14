@@ -18,7 +18,7 @@ describe('Calculator', () => {
      it('multiply n1 and n2', () => {
          assert.equal(calculator.multiply(6, 2), 12)
          assert.equal(calculator.multiply(8, -3), -24)
-         assert.equal(calculator.multiply(-5, -7), -35)
+         assert.equal(calculator.multiply(-5, -7), 35)
         })
    })
 

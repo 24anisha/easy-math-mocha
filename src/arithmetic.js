@@ -1,29 +1,10 @@
-export function add(n1: number, n2: number): number {
-    typeError(n1, n2);
-    return (n1 + n2);
+const add = (a, b) => a + b
+const subtract = (a, b) => a - b
+const multiply = (a, b) => a * b
+const divide = (a, b) => b !== 0 ? (a / b) : undefined 
+module.exports = {
+  add,
+  subtract,
+  multiply,
+  divide,
 }
-
-export function multiply(n1: number, n2: number): number {
-    typeError(n1, n2);
-    return (n1 * n2);
-}
-
-export function subtract(n1: number, n2: number): number {
-    typeError(n1, n2);
-    return (n1 - n2);
-}
-
-export function divide(n1: number, n2: number): number {
-    typeError(n1, n2);
-    if (n2 == 0) {
-        return undefined
-    }
-    return (n1 / n2);
-}
-
-export default {
-    add,
-    multiply,
-    subtract,
-    divide
-};
